@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: emptydir-demo
+spec:
+  containers:
+    - name: writer
+      image: alpine
+      command: ["sh", "-c", "while true; do date >> /shared/log.txt; sleep 2; done"]
+      volumeMounts:
+        - name: shared-data
+          mountPath: /shared
+    - name: reader
+      image: alpine
+      command: ["sh", "-c", "tail -f /shared/log.txt"]
+      volumeMounts:
+        - name: shared-data
+          mountPath: /shared
+  volumes:
+    - name: shared-data
+      emptyDir: {}

@@ -1,0 +1,17 @@
+# Stage 1: Install dependencies
+FROM python:3.12-slim AS base
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Stage 2: Run tests
+FROM base AS test
+COPY . .
+RUN pip install pytest
+RUN pytest tests/ -v
+
+# Stage 3: Production image (only built if tests pass)
+FROM base AS production
+COPY app.py .
+EXPOSE 5000
+CMD ["python", "app.py"]
