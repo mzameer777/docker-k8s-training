@@ -13,37 +13,6 @@ A hands-on workshop covering Docker fundamentals through advanced Kubernetes con
 - **Helm** (for Day 2 advanced): `brew install helm`
 - A terminal and text editor
 
-## Workshop Structure
-
-### Day 1: Docker (6 hours)
-
-| Time          | Module | Topic                                         |
-| ------------- | ------ | --------------------------------------------- |
-| 09:00 - 10:30 | [01](day1-docker/01-basics/)         | **Docker Basics** — containers, images, lifecycle |
-| 10:30 - 10:45 |        | *Break*                                       |
-| 10:45 - 12:15 | [02](day1-docker/02-images/)         | **Building Images** — Dockerfiles, layers, caching |
-| 12:15 - 13:15 |        | *Lunch*                                       |
-| 13:15 - 14:15 | [03](day1-docker/03-volumes-networks/) | **Volumes & Networks** — persistence, DNS, isolation |
-| 14:15 - 15:00 | [04](day1-docker/04-multi-stage/)    | **Multi-Stage Builds** — optimized images     |
-| 15:00 - 15:15 |        | *Break*                                       |
-| 15:15 - 16:15 | [05](day1-docker/05-compose/)        | **Docker Compose** — multi-container apps     |
-| 16:15 - 16:45 | [06](day1-docker/06-best-practices/) | **Best Practices & Security**                 |
-| 16:45 - 17:00 |        | *Day 1 Wrap-up & Q&A*                         |
-
-### Day 2: Kubernetes (6 hours)
-
-| Time          | Module | Topic                                         |
-| ------------- | ------ | --------------------------------------------- |
-| 09:00 - 10:00 | [01](day2-kubernetes/01-basics/)     | **K8s Basics** — architecture, kubectl, pods  |
-| 10:00 - 10:15 |        | *Break*                                       |
-| 10:15 - 11:45 | [02](day2-kubernetes/02-pods-deployments/) | **Deployments** — scaling, rolling updates, rollbacks |
-| 11:45 - 12:45 |        | *Lunch*                                       |
-| 12:45 - 13:45 | [03](day2-kubernetes/03-services-networking/) | **Services & Networking** — ClusterIP, NodePort, Ingress |
-| 13:45 - 14:30 | [04](day2-kubernetes/04-configmaps-secrets/) | **ConfigMaps & Secrets** — externalized config |
-| 14:30 - 14:45 |        | *Break*                                       |
-| 14:45 - 15:30 | [05](day2-kubernetes/05-storage/)    | **Persistent Storage** — PVC, StatefulSets    |
-| 15:30 - 17:00 | [06](day2-kubernetes/06-advanced/)   | **Advanced** — HPA, Jobs, RBAC, Network Policies, Helm |
-
 ## Repository Layout
 
 ```
