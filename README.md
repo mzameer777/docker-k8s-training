@@ -93,6 +93,20 @@ GET  /env         → Show environment variables
 3. **Do the exercises**: Each module ends with hands-on exercises
 4. **Clean up**: Each demo includes cleanup commands to reset your environment
 
+## Take-Home Assignments
+
+Practice after each day with hands-on assignments that build a complete, production-grade application from scratch:
+
+| Assignment File | Contents |
+| --------------- | -------- |
+| [assignments/day1-docker-assignments.md](assignments/day1-docker-assignments.md) | 5 assignments + a bonus CI challenge covering Dockerfiles, multi-stage builds, volumes, Compose, and security hardening |
+| [assignments/day2-kubernetes-assignments.md](assignments/day2-kubernetes-assignments.md) | 5 assignments + a capstone project covering Deployments, rolling updates, full stack K8s, RBAC, and HPA |
+| [assignments/cheatsheet.md](assignments/cheatsheet.md) | Full Docker + Kubernetes command reference |
+
+Each day's assignments build on each other, culminating in a **Capstone Assignment** where participants deploy a secure, auto-scaling, fully configured application stack on Kubernetes.
+
+---
+
 ## Tips for Presenters
 
 - Run demos live — mistakes are learning opportunities
