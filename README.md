@@ -74,11 +74,3 @@ Practice after each day with hands-on assignments that build a complete, product
 
 Each day's assignments build on each other, culminating in a **Capstone Assignment** where participants deploy a secure, auto-scaling, fully configured application stack on Kubernetes.
 
----
-
-## Tips for Presenters
-
-- Run demos live — mistakes are learning opportunities
-- Let participants try exercises before showing solutions
-- Use `kubectl get pods -w` and `docker compose logs -f` to show real-time behavior
-- Keep a "parking lot" for questions that go beyond the current module
